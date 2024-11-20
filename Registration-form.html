@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form for Adventure Travel Club</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Adventure Travel Club
+            </h1>
+            <p>
+                Begin your Journey with fellow adventurers
+            </p>
+        </div>
+        <form action="">
+            <div class="section">
+                <h2>
+                    Personal Information.
+                </h2>
+                <div class="form-row">
+                    <label for="firstName" class="form-group">First Name</label>
+                    <input type="text" id="firstName" required>
+                    <label for="lastName" class="form-group">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                    <br>
+                    <label for="Email" class="form-group">Email</label>
+                    <input type="text" id="Email" required>
+                    <br>
+                    <label for="Date" class="form-group">Date of Birth</label>
+                    <input type="date" id="Date" required>
+            </div>
+            <div class="Experience">
+                <h2>
+                    Experience Level
+                </h2>
+                <select id="Experience" required>
+                    <option value="Experience">Select Your Experience Level</option>
+                    <option value="Experience">Beginner</option>
+                    <option value="Experience">Intermediate</option>
+                    <option value="Experience">Advanced</option>
+                    <option value="Experience">Profensional</option>
+                </select>
+                <br>
+                <label for="Activities">Preffered Activities</label>
+                <br>
+                <label for="checkbox">Hiking</label>
+                <input type="checkbox" id="checkbox">
+                <br>
+                <label for="checkbox">Rock Climbing</label>
+                <input type="checkbox" id="checkbox">
+                <br>
+                <label for="checkbox">Kayaking</label>
+                <input type="checkbox" id="checkbox">
+                <br>
+                <label for="checkbox">Scuba Diving</label>
+                <input type="checkbox" id="checkbox">
+                <br>
+                <br>
+                <label for="Duration">Preferred Trip Duration</label>
+                <br>
+                <input type="radio" name="Duration">
+                <label for="radio">Weekend Trips (2-3 days)</label>
+                <br>
+                <input type="radio" name="Duration">
+                <label for="radio">Week-long Adventures (5-7 days)</label>
+                <br>
+                <input type="radio" name="Duration">
+                <label for="radio">Extended Expeditions (2+ Weeks)</label>
+            </div>
+            <div class="Additional">
+                <h2>
+                    Additional Information
+                </h2>
+                <label for="fitness">Fitness Level (1-10)</label>
+                <br>
+                <input type="range" min="0" max="10">
+                <br>
+                <label for="textarea">Tell us about yourself</label>
+                <br>
+                <textarea name="" id="" cols="30" rows="10">Share your adventure experiences and what excites you about joining our club...</textarea>
+                <br>
+                <label for="Profile Photo">Profile Photo</label>
+                <br>
+                <input type="image" accept="image/*">
+            </div>
+            <input type="checkbox"required>
+            <p>I Agree to the Terms and Conditions and Privacy Policy</p>
+            <button>Submit Registration</button>
+        </form>
+    </div>
+</body>
+</html>

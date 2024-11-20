@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account form in HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+
+        <div class="form-header">
+            <h1>
+                Create Account
+            </h1>
+            <p>
+                Fill in the details to get started
+            </p>
+        </div>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="fullName" class="form">Full Name</label>
+                <br>
+                <input type="text" id="fullName" required placeholder="John Doe">
+                <br>
+                <label  class="required" for="Email">Email</label>
+                <br>
+                <input type="text" id="fullName" required placeholder="john.doe@gmail.com">
+                <br>
+                <label for="Password" class="required">Password</label>
+                <br>
+                <input type="text" id="Password" required placeholder="1234567890">
+                <p>Must Be 8 characters long</p>
+                <label for="dropdown">Role</label>
+                <br>
+                <select name="Role" id="Job">
+                    <option value="Job">Unemployed</option>
+                    <option value="Job">Employed</option>
+                </select>
+                <br>
+                <label for="bio">Bio</label>
+                <br>
+                <textarea name="bio"cols="50" rows="5">Tell us about yourself</textarea>
+                <p>Keep it Short and Sweet</p>
+                <label id="T-O-S"></label>
+                <input type="checkbox" id="T-O-S" name="T-O-S" value="T-O-S"> <p>I Agree to the terms and conditions</p>
+                <input class="submit" type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
